@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+body{
+    font-size: 16px;
+    font-family: "kanit" , sans-serif;
+}
+ nav{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 10; */
+    background: white;
+}
+ nav #logo{
+    /* display: flex; */
+    width: 40%;
+    /* text-align: center; */
+    padding-left: 2rem;
+}
+ nav #navlist{
+    width: 60%;
+}
+ nav #navlist ul{
+    display: flex;
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    justify-content: center;
+}
+ nav #navlist ul li{
+    list-style: none;
+}
+ nav #navlist ul li a{
+    text-decoration: none;
+    /* border: 2px solid red; */
+    margin: 1.5rem;
+    padding: 0.2rem 0.5rem;
+
+    color: black;
+}
+ nav #navlist ul li a:hover{
+    background: #000;
+    color: #fefefe;
+    /* border: 1px solid #fefefe; */
+    box-shadow: 2px 2px 2px 2px grey;
+}
+@media (max-width:1075px) {
+     nav #navlist ul li a{
+        margin: 1rem;
+    }
+}
+@media (max-width:939px) {
+     nav #navlist ul li a{
+        margin: 1rem;
+    }
+     nav #logo{
+        width: 30%;
+    }
+     nav #navlist{
+        width: 70%;
+    }
+}
+@media (max-width:805px) {
+     nav #navlist ul li a{
+        margin: 0.7rem;
+    }
+}
+@media (max-width:730px) {
+     nav #navlist{
+       display: none;
+    }
+}
+/* ************************************************menu icon ***************************** */
+ nav #menu-icon{
+    display: none;
+    /* border: 2px solid red; */
+    /* float: right; */
+    width: 60%;
+}
+#menu-icon i{
+    float: right;
+    font-size: 2rem;
+    color: #000;
+    margin-right: 2rem;
+}
+@media (max-width:730px) {
+     nav #menu-icon{
+       display: block;
+    }
+}
+/* ************************************* responsive nav lis ************************************ */
+#res-nav{
+    display: none;
+    /* border: 2px solid black; */
+    float: right;
+    position: relative;
+    top: 0.5rem;
+    right: 1rem;
+    /* margin-right: 2rem; */
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    background: #fefefe;
+}
+#res-nav #x-mark{
+    position: relative;
+    /* left: 1rem; */
+    margin-left: 1rem;
+    /* border: 2px solid red; */
+}
+#res-nav ul{
+    text-align: center;
+}
+#res-nav li{
+list-style: none;
+line-height: 2rem;
+}
+#res-nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.2rem 0.5rem;
+}
+#res-nav a:hover{
+    background: #000;
+    color: #fefefe;
+    /* border: 1px solid #fefefe; */
+    box-shadow: 1px 1px 1px 1px grey;
+}
+/* ************************************************ video ******************************** */
+ #video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   /* border: 2px solid red; */
+   overflow: hidden;
+   z-index: -1;
+}
+ #video video{
+    width: 100%;
+}
+ #video #video-overlay{
+    position: absolute;
+    top: 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: lightskyblue;
+    opacity: 0.4;
+}
+ #video #video-text{
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    z-index: 100;
+    width: 50%;
+}
+ #video #video-text h1 span{
+    font-size: 2.5rem;
+    color: blue;
+}
+ #video #video-text p{
+    width: 80%;
+    text-align: justify;
+
+}
+@media (max-width:1075px) {
+     #video #video-text{
+        top:10rem;
+    }
+}
+@media (max-width:940px) {
+     #video #video-text{
+        top:5rem;
+    }
+     #video #video-text h1{
+        font-size: 2rem;
+    }
+     #video #video-text p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:830px) {
+     #video #video-text{
+        top:7rem;
+    }
+     #video #video-text h1{
+        font-size: 1.7rem;
+    }
+     #video #video-text p{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:756px) {
+     #video #video-text{
+        top:7rem;
+    }
+     #video #video-text h1{
+        font-size: 1.7rem;
+    }
+     #video #video-text p{
+        font-size: 0.8rem;
+    }
+    .cut-later{
+        display: none;
+    }
+}
+@media (max-width:670px) {
+     #video #video-text p{
+        display: none;
+    }
+}
+@media (max-width:508px) {
+     #video #video-text{
+        width: 80%;
+        top: 5rem;
+    }
+     #video #video-text h1 span{
+        /* display: none; */
+        font-size: 2rem;
+    }
+}
+@media (max-width:382px) {
+     #video #video-text h1{
+        font-size: 1.5rem;
+    }
+}
+/* *******************************************popular-courses-container******************* */
+#popular-courses{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 1rem;
+    position: relative;
+    top: 100vh;
+}
+#popular-courses #popular-courses-haed{
+    padding: 2rem 0;
+    text-align: center;
+    color: #4c31e6;
+    background: #fefefe;
+}
+#popular-courses #popular-courses-body{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fefefe;
+}
+#popular-courses #popular-courses-body .course img{
+    /* width:100%; */
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course{
+    width: 30%;
+    padding: 1rem ;
+    margin: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+.course p:nth-child(3){
+    color: #4c31e6;
+}
+.course-container-a{
+    text-decoration: none;
+    color: #000;
+}
+#course-detail{
+    margin-top: 1rem;
+}
+.course-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 300px; */
+    max-width: 100%;
+    /* height: 300px; */
+    /* border: 2px solid red; */
+}
+@media (min-width:715px) and (max-width:823px) {
+    #course-detail h2{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:715px) {
+    .course{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    #popular-courses #popular-courses-body{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:550px) {
+    .course{
+        width: 80%;
+    }
+}
+/* ***********************************coursedetail-container******************* */
+#coursedetail-container{
+    margin-top: 5rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#coursedetail-container #coursedetail-img{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+#coursedetail-container #coursedetail-img img{
+    max-width: 100%;
+    height: 100%;
+}
+#coursedetail-container #coursedetails{
+    /* border: 2px solid black; */
+    padding: 2rem;
+}
+#coursedetail-container button{
+    text-decoration: none;
+    background: blue;
+    border: 2px solid skyblue;
+    color: #fefefe;
+    padding: 0.2rem 0.5rem;
+}
+#coursedetail-table table{
+    top: 2rem;
+    position: relative;
+    /* left: 5%; */
+    width: 80%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#coursedetail-table{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+/* *********************************advantages************************** */
+#advantage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 1rem;
+    position: relative;
+    top: 100vh;
+    /* background: #ADD8E6; */
+}
+#advantage #advantage-head{
+    padding: 2rem 0;
+    text-align: center;
+    color: #4c31e6;
+    background: #fefefe;
+}
+#advantage #advantage-body{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    background: #fefefe;
+}
+.advantages{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.advantages p{
+    width: 60%;
+    text-align: center;
+}
+@media (max-width:725px) {
+    .advantages{
+        width: 80%;
+    }
+}
+/* *************************************footer****************************** */
+footer{
+    margin-top: 5rem;
+    position: relative;
+    top: 100vh;
+    height: 50px;
+    /* background: #4c31e6; */
+    /* background: #5375e2; */
+    background: #ADD8E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h3{
+    text-align: center;
+}
+footer a{
+    /* text-align: center; */
+    text-decoration: none;
+    margin-left: 1rem;
+}
+/* *************************all-courses******************* */
+#all-courses{
+    border: 5px solid red;
+}

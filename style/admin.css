@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: "kanit" ,sans-serif;
+    font-size: 16px;
+}
+nav{
+    height: 10vh;
+    background: skyblue;
+
+}
+nav .logo {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+#dashboard{
+    display: flex;
+    flex-direction: row;
+}
+#dashboard #sidebar{
+    width: 15%;
+    height: 90vh;
+    box-shadow: 2px 2px 2px grey;
+}
+#sidebar li{
+    list-style: none;
+}
+#sidebar a{
+    text-decoration: none;
+    color: blue;
+    line-height: 3rem;
+    padding-left:1rem;
+    transition: 1s;
+}
+#sidebar a:hover{
+    position: relative;
+    left: 1rem;
+}
+#sidebar a i{
+    margin-right: 0.5rem;
+}
+#dashboard #dashboard-desc{
+    width: 85%;
+}
+#cards{
+    display: flex;
+    padding: 2rem 0 ;
+    justify-content: center;
+    align-items: center;
+}
+#cards .card{
+    width: 25%;
+    text-align: center;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 2px 2px skyblue;
+}
+
+
+#student-table h2,#courses-list h2,h2{
+    margin: 2rem 1rem;
+    text-align: center;
+    color: blue;
+}
+#student-table table,#courses-list table{
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+td i{
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#add-course-btn{
+    position: fixed;
+    top: 90vh;
+    left: 95vw;
+    width: fit-content;
+    padding: 0.5rem;
+    background: blue;
+    border: 4px solid skyblue;
+    /* box-shadow: 0px 2px 2px 2px blue; */
+    cursor: pointer;
+}
+#add-course-btn:active{
+    box-shadow: none;
+}
+#add-course-btn i{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fefefe;
+    /* color: blue; */
+}
+#add-course-form,#add-lesson-form{
+    width: 70%;
+    position: relative;
+    left: 12%;
+    padding: 1rem 2rem;
+    background: rgb(241, 251, 255);
+}
+#add-course-form input,#add-lesson-form input{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    /* height: 10%; */
+}
+#add-course-form textarea,#add-lesson-form textarea{
+    width: 90%;
+    border: none;
+}
+.submit-close-btn{
+    text-align: center;
+}
+.submit-close-btn button{
+    background: blue;
+    color: #fefefe;
+    border: 2px solid skyblue;
+    /* padding: 0.2rem 0.5rem; */
+    padding:0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.submit-close-btn a{
+    margin-left: 1rem;
+    text-decoration: none;
+}
+#phpmsg{
+    text-align: center;
+}
+#checkid{
+    margin: 1rem 0;
+    width: 50%;
+    box-shadow: 2px 2px grey;
+}

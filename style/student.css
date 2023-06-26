@@ -1,0 +1,77 @@
+
+#stu-dashboard{
+    display: flex;
+    flex-direction: row;
+}
+#stu-dashboard #student-sidebar{
+    width: 20%;
+    height: 90vh;
+    box-shadow: 2px 2px 2px grey;
+}
+#student-sidebar li{
+    list-style: none;
+}
+#student-sidebar a{
+    text-decoration: none;
+    color: blue;
+    line-height: 3rem;
+    padding-left:1rem;
+    transition: 1s;
+}
+#student-sidebar a:hover{
+    position: relative;
+    left: 1rem;
+}
+#student-sidebar a i{
+    margin-right: 0.5rem;
+}
+#stu-dashboard #studashboard-desc{
+    width: 85%;
+}
+
+
+
+
+
+
+
+
+
+#studentProfile-form h2{
+    margin: 2rem 1rem;
+    text-align: center;
+    color: blue;
+}
+#studentProfile-form{
+    width: 70%;
+    position: relative;
+    top: 5%;
+    left: 12%;
+    padding: 1rem 2rem;
+    background: rgb(241, 251, 255);
+    /* border: 2px solid red; */
+}
+#studentProfile-form input{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    /* height: 10%; */
+}
+.submit-btn{
+    text-align: center;
+}
+.submit-btn button{
+    background: blue;
+    color: #fefefe;
+    border: 2px solid skyblue;
+    /* padding: 0.2rem 0.5rem; */
+    padding:0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+#passmsg{
+    text-align: center;
+}
+
